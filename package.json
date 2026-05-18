@@ -1,0 +1,65 @@
+{
+  "name": "react-earth-lite",
+  "version": "0.1.0",
+  "description": "A tiny React Three Fiber Earth object with NASA-derived maps, clouds, night lights, atmosphere, and pins.",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "./dist/react-earth-lite.js",
+  "module": "./dist/react-earth-lite.js",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "earth",
+    "globe",
+    "react",
+    "react-three-fiber",
+    "three",
+    "webgl",
+    "nasa",
+    "blue-marble"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/react-earth-lite.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/react-earth-lite.js",
+    "dist/index.d.ts",
+    "dist/assets/textures/*.webp",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/copy-assets.mjs",
+    "build:demo": "vite build --mode demo && node scripts/copy-demo-assets.mjs",
+    "lint": "eslint .",
+    "prepack": "npm run lint && npm run build",
+    "pack:release": "npm pack",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "@react-three/fiber": "^9.6.1",
+    "react": ">=18.2.0",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "@react-three/fiber": "^9.6.1",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "three": "^0.184.0",
+    "vite": "^8.0.12"
+  }
+}

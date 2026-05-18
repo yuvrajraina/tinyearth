@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, 0.68), rgba(2, 6, 23, 0.96)),
+    #030712;
+  color: #f8fafc;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.stage {
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.stage canvas {
+  display: block;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.panel {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  width: min(420px, calc(100vw - 48px));
+  padding: 24px;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 8px;
+  background: rgba(8, 13, 27, 0.72);
+  backdrop-filter: blur(16px);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #93c5fd;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 56px;
+  line-height: 0.98;
+}
+
+.panel p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+code {
+  display: block;
+  margin-top: 20px;
+  max-width: 100%;
+  overflow-x: auto;
+  color: #bfdbfe;
+  font: 14px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+@media (max-width: 850px) {
+  .panel {
+    left: 24px;
+    top: 24px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
