@@ -1,6 +1,6 @@
 {
   "name": "react-earth-lite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A tiny React Three Fiber Earth object with NASA-derived maps, clouds, night lights, atmosphere, and pins.",
   "type": "module",
   "license": "MIT",

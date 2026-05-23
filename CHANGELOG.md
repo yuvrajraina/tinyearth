@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 - 2026-05-23
+
+- Fixed bundled default texture URLs so Vite consumer builds emit the WebP assets into production output.
+
 ## 0.1.0 - 2026-05-18
 
 - Initial release of `react-earth-lite`.

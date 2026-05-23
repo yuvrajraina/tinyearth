@@ -131,20 +131,12 @@ const QUALITY = {
   high: { segments: [64, 32] },
 };
 
-function packageAsset(name) {
-  const assetPath = import.meta.url.includes("/assets/")
-    ? "./textures/"
-    : "./assets/textures/";
-
-  return new URL(assetPath + name, import.meta.url).href;
-}
-
 const DEFAULT_TEXTURES = {
-  clouds: packageAsset("earth-clouds.webp"),
-  day: packageAsset("earth-day.webp"),
-  night: packageAsset("earth-night.webp"),
-  normal: packageAsset("earth-normal.webp"),
-  specular: packageAsset("earth-specular.webp"),
+  clouds: new URL("./assets/textures/earth-clouds.webp", import.meta.url).href,
+  day: new URL("./assets/textures/earth-day.webp", import.meta.url).href,
+  night: new URL("./assets/textures/earth-night.webp", import.meta.url).href,
+  normal: new URL("./assets/textures/earth-normal.webp", import.meta.url).href,
+  specular: new URL("./assets/textures/earth-specular.webp", import.meta.url).href,
 };
 
 const DEFAULT_LIGHT = [0.25, 0.12, 1];
