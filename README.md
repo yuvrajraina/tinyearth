@@ -20,10 +20,8 @@ npm install react-earth-lite three @react-three/fiber
 Or install a GitHub Release tarball:
 
 ```bash
-npm install https://github.com/OWNER/REPO/releases/download/v0.1.0/react-earth-lite-0.1.0.tgz
+npm install https://github.com/yuvrajraina/tinyearth/releases/download/v0.1.0/react-earth-lite-0.1.0.tgz
 ```
-
-Replace `OWNER/REPO` with the GitHub repository.
 
 ## Usage
 
@@ -103,23 +101,6 @@ The bundled maps are resized and compressed derivatives of NASA Earth imagery:
 - Blue Marble topography and bathymetry: https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/topography-bathymetry-maps/
 - NASA media usage guidelines: https://www.nasa.gov/multimedia/guidelines/index.html
 
-## Development
-
-```bash
-npm run dev
-npm run lint
-npm run build
-```
-
-`npm run build` creates the package bundle in `dist/`. `npm run build:demo` builds the demo app.
-
-## Release
-
-```bash
-npm run lint
-npm run build
-npm pack
-```
 
 The package tarball contains the ESM bundle, TypeScript declarations, NASA-derived WebP texture assets, README, changelog, and MIT license. See `RELEASE.md` for the GitHub tag workflow.
 
